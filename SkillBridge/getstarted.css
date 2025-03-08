@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b22222;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.signup-btn, .login-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background-color: #b22222;
+    color: white;
+}
+
+.login-btn {
+    background: none;
+    border: 1px solid #b22222;
+    color: #b22222;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #8b0000;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.dark {
+    background: black;
+    color: white;
+}
+
+.btn.light {
+    background: white;
+    color: black;
+}
+
+/* Why Choose Section */
+.why-choose {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-box {
+    width: 200px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+/* Explore Categories */
+.categories {
+    text-align: center;
+    padding: 40px 20px;
+    background: #8b0000;
+    color: white;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-box {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.category-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* How It Works */
+.how-it-works {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.step {
+    background: #b22222;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

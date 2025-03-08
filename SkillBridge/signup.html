@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script defer src="signup.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">SkillBridge</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Find Jobs</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        
+        <button class="social-btn google">Sign up with Google</button>
+        <button class="social-btn linkedin">Sign up with LinkedIn</button>
+        
+        <div class="separator"><span>or</span></div>
+
+        <form id="signup-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+
+            <label for="role">I am a:</label>
+            <select id="role">
+                <option value="">Select your role</option>
+                <option value="student">Student</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="employer">Employer</option>
+            </select>
+
+            <div class="terms">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <button type="submit" class="signup-btn">Create Account</button>
+        </form>
+
+        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+
+</body>
+</html>
