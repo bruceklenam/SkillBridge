@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5e7e0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b22222;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Signup Container */
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Signup Buttons */
+.social-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.google {
+    background: #db4437;
+    color: white;
+}
+
+.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+/* Separator */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator span {
+    flex-grow: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Terms & Conditions */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms a {
+    color: #b22222;
+}
+
+/* Signup Button */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background: #5a1e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #b22222;
+    font-weight: bold;
+}
