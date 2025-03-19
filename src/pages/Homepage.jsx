@@ -1,30 +1,30 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Homepage.css";
 
 function Homepage() {
   return (
     <main>
-      <nav class="navbar">
-        <div class="logo">SkillBridge</div>
-        <ul class="nav-links">
+      <nav className="navbar">
+        <div className="logo">SkillBridge</div>
+        <ul className="nav-links">
           <li>
-            <a href="index.html" class="active">
-              Home
-            </a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Find Jobs</a>
+            <Link to="/jobs">Find Jobs</Link>
           </li>
           <li>
-            <a href="#">Learn</a>
+            <Link to="/gig">Post a Gig</Link>
           </li>
           <li>
-            <a href="#">Community</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
 
         <div className="signuplogin">
           <button
-            class="signup-btn"
+            className="signup-btn"
             onClick={() => {
               window.location.href = "/signup";
             }}
@@ -32,7 +32,7 @@ function Homepage() {
             Sign Up
           </button>
           <button
-            class="login-btn"
+            className="login-btn"
             onClick={() => {
               window.location.href = "/login";
             }}
@@ -41,7 +41,7 @@ function Homepage() {
           </button>
         </div>
 
-        <div class="menu-toggle">&#9776;</div>
+        <div className="menu-toggle">&#9776;</div>
       </nav>
 
       <header class="hero">

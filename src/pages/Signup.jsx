@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Signup.css";
 
 function Signup() {
@@ -8,16 +9,16 @@ function Signup() {
         <div className="logo">SkillBridge</div>
         <ul className="nav-links">
           <li>
-            <a href="index.html">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Find Jobs</a>
+            <Link to="/jobs">Find Jobs</Link>
           </li>
           <li>
-            <a href="#">Learn</a>
+            <Link to="/gig">Post a Gig</Link>
           </li>
           <li>
-            <a href="#">Community</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
@@ -86,7 +87,7 @@ function Signup() {
         </form>
 
         <p className="login-link">
-          Already have an account? <a href="login.html">Log in</a>
+          Already have an account? <Link to="/login">Log in</Link>
         </p>
       </div>
     </main>
