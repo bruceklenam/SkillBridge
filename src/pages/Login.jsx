@@ -15,9 +15,6 @@ function Login() {
             <Link to="/jobs">Find Jobs</Link>
           </li>
           <li>
-            <Link to="/gig">Post a Gig</Link>
-          </li>
-          <li>
             <Link to="/about">About</Link>
           </li>
         </ul>

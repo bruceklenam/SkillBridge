@@ -5,39 +5,12 @@ import "./Gig.css";
 function Gig() {
   return (
     <div>
+      <Link to="/" className="back-button">
+        Back to Home
+      </Link>
+
       <header>
-        <div className="nav-container">
-          <div className="logo">SkillBridge</div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/jobs">Find Jobs</Link>
-              </li>
-              <li>
-                <Link to="/gig">Post a Gig</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/login">
-                  <img
-                    src="/profile-icon.png"
-                    alt="Profile"
-                    className="nav-profile"
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
         <h1>SkillBridge - Create a New Gig</h1>
-        <Link to="/jobs" className="back-button">
-          Back to Jobs
-        </Link>
       </header>
 
       <div className="container">

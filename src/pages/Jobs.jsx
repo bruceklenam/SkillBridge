@@ -23,9 +23,9 @@ function Jobs() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/login">
+                <Link to="/profile">
                   <img
-                    src="/profile-icon.png"
+                    src="/path/to/profile-icon.png"
                     alt="Profile"
                     className="nav-profile"
                   />

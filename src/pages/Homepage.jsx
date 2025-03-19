@@ -1,21 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 function Homepage() {
+  const navigate = useNavigate();
+
   return (
     <main>
       <nav className="navbar">
         <div className="logo">SkillBridge</div>
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="active">
+              Home
+            </Link>
           </li>
           <li>
             <Link to="/jobs">Find Jobs</Link>
-          </li>
-          <li>
-            <Link to="/gig">Post a Gig</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -23,20 +24,10 @@ function Homepage() {
         </ul>
 
         <div className="signuplogin">
-          <button
-            className="signup-btn"
-            onClick={() => {
-              window.location.href = "/signup";
-            }}
-          >
+          <button className="signup-btn" onClick={() => navigate("/signup")}>
             Sign Up
           </button>
-          <button
-            className="login-btn"
-            onClick={() => {
-              window.location.href = "/login";
-            }}
-          >
+          <button className="login-btn" onClick={() => navigate("/login")}>
             Login
           </button>
         </div>

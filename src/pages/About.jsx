@@ -23,9 +23,9 @@ function About() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/login">
+                <Link to="/profile">
                   <img
-                    src="/profile-icon.png"
+                    src="/path/to/profile-icon.png"
                     alt="Profile"
                     className="nav-profile"
                   />
@@ -146,10 +146,10 @@ function About() {
                 <Link to="/jobs">Find Jobs</Link>
               </li>
               <li>
-                <Link to="/learn">Learn</Link>
+                <Link to="/gig">Post a Gig</Link>
               </li>
               <li>
-                <Link to="/community">Community</Link>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
