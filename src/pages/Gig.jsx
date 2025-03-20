@@ -4,14 +4,14 @@ import "./Gig.css";
 
 function Gig() {
   return (
-    <div>
+    <main>
       <Link to="/" className="back-button">
-        Back to Home
+        Back
       </Link>
 
-      <header>
+      <div className="header">
         <h1>SkillBridge - Create a New Gig</h1>
-      </header>
+      </div>
 
       <div className="container">
         <h2>Create Your Gig</h2>
@@ -50,12 +50,12 @@ function Gig() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="price">Price ($)</label>
+            <label htmlFor="price">Payout ($)</label>
             <input
               type="number"
-              id="price"
-              name="price"
-              placeholder="Enter your price"
+              id="Payout"
+              name="Payout"
+              placeholder="Enter your payout amount"
               required
             />
           </div>
@@ -88,7 +88,7 @@ function Gig() {
           Make sure your gig is clear and professional to attract more clients!
         </p>
       </div>
-    </div>
+    </main>
   );
 }
 

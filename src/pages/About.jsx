@@ -4,39 +4,35 @@ import "./About.css";
 
 function About() {
   return (
-    <div>
-      <header>
-        <div className="nav-container">
-          <div className="logo">SkillBridge</div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/jobs">Find Jobs</Link>
-              </li>
-              <li>
-                <Link to="/gig">Post a Gig</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/profile">
-                  <img
-                    src="/path/to/profile-icon.png"
-                    alt="Profile"
-                    className="nav-profile"
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    <main>
+      <nav className="navbar">
+        <div className="logo">SkillBridge</div>
+        <ul className="nav-links">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/jobs">Find Jobs</Link>
+          </li>
+          <li>
+            <Link to="/gig">Post a Gig</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/profile">
+              <img
+                src="/path/to/profile-icon.png"
+                alt="Profile"
+                style={{ width: "30px", height: "30px", borderRadius: "50%" }}
+              />
+            </Link>
+          </li>
+        </ul>
+      </nav>
 
-      <main>
+      
         <section className="hero-section">
           <h1>Welcome to the SkillBridge!</h1>
           <p>
@@ -129,37 +125,6 @@ function About() {
           </p>
         </section>
       </main>
-
-      <footer>
-        <div className="footer-container">
-          <div className="footer-column">
-            <h3>SkillBridge</h3>
-            <p>Bridging the gap for African student freelancers</p>
-          </div>
-          <div className="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/jobs">Find Jobs</Link>
-              </li>
-              <li>
-                <Link to="/gig">Post a Gig</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h3>Contact</h3>
-            <p>Email: info@skillbridge.africa</p>
-          </div>
-        </div>
-      </footer>
-    </div>
   );
 }
 

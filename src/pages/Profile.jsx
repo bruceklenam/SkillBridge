@@ -32,72 +32,85 @@ function Profile() {
         </ul>
       </nav>
 
-      <header>
-        <h1>Welcome to your profile</h1>
-        <p>
-          Here you can view your profile information, update your profile, and
-          view your job applications
-        </p>
-        <div>
-          <img className="profile-image" alt="Profile" />
-        </div>
-        <div className="hero-buttons">
-          <button className="btn dark">Update Profile</button>
-          <button className="btn light">View Applications</button>
-        </div>
-      </header>
+      <div class="profile-container">
 
-      <section className="about">
-        <h2>About</h2>
-        <p>
-          I am an illustrator, an animator, a digital artist, and a comic and
-          manga artist. Have you ever wished your dream manga or comic would
-          come to life? Turning dreams into reality is what I'm all about! With
-          my expertise in comic and manga illustration, I'm here to transform
-          your captivating stories into visually stunning masterpieces that will
-          captivate your audience. No more worrying about your ideas going
-          unnoticed - together, we'll bring them to life in a way that resonates
-          with your dream audience. Let's collaborate and make magic happen!
-        </p>
-        <div>
-          <button className="Edit-details">+ Edit details</button>
-        </div>
-      </section>
 
-      <section className="education">
-        <p>Back up your skills by adding any education degrees or programs</p>
-        <div>
-          <button className="Add-education">+ Add Education</button>
-        </div>
-      </section>
+<div class="profile-header">
+    <img src="https://via.placeholder.com/120" alt="Profile Picture"/>
+    <h2>Barima Owusu Basoah</h2>
+    <p>@bobby_nots | Kumasi, Ghana | Speaks English</p>
+</div>
 
-      <section className="skills">
-        <p>
-          Attract and impress potential clients by showcasing your skills and
-          best works
-        </p>
-        <div>
-          <button className="Add-skills">+ Add Skills</button>
-        </div>
-        <div>
-          <button className="Add-portfolio">+ Add Portfolio</button>
-        </div>
-      </section>
 
-      <footer className="footer">
-        <div className="footer-section">
-          <h3>SkillBridge</h3>
-          <p>Bridging the gap for African student freelancers</p>
+<div class="section about-section">
+    <h3>About</h3>
+    <a href="#" class="edit-btn">Edit</a>
+    <p>I am an illustrator, animator, and digital artist. My goal is to help you bring your dream comic or manga to life! I specialize in captivating illustrations and storytelling that engage your audience.</p>
+</div>
+
+
+<div class="section info-section">
+    <h3>Details</h3>
+    <a href="#" class="edit-btn">Edit</a>
+    <ul class="info-list">
+        <li><strong>Location:</strong> Kumasi, Ghana</li>
+        <li><strong>Languages:</strong> English</li>
+        <li><strong>Rating:</strong> 5.9 / 6.0</li>
+        <li><strong>Email:</strong> user@example.com</li>
+        <li><strong>Joined:</strong> January 2024</li>
+    </ul>
+</div>
+
+
+<div class="section">
+    <h3>Skills</h3>
+    <a href="#" class="edit-btn">Edit</a>
+    <span class="tag">Illustration</span>
+    <span class="tag">Character Design</span>
+    <span class="tag">Digital Art</span>
+    <span class="tag">Manga Artist</span>
+    <span class="tag">Storyboarding</span>
+</div>
+
+<div class="section">
+    <h3>Portfolio</h3>
+    <a href="#" class="edit-btn">Edit</a>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x150" alt="Portfolio Item"/>
+            <p>Comic Book Project</p>
         </div>
-        <div className="footer-section">
-          <h3>Quick Links</h3>
-          <p>Home | Find Jobs | Learn | Community</p>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x150" alt="Portfolio Item"/>
+            <p>Manga Character Designs</p>
         </div>
-        <div className="footer-section">
-          <h3>Contact</h3>
-          <p>Email: info@skillbridge.africa</p>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x150" alt="Portfolio Item"/>
+            <p>Webtoon Panels</p>
         </div>
-      </footer>
+    </div>
+</div>
+
+
+<div class="section">
+    <h3>Services</h3>
+    <a href="#" class="edit-btn">Edit</a>
+    <div class="service-card">
+        <h4>Comic & Manga Illustration</h4>
+        <p>High-quality comic and manga page illustrations tailored to your story. Starting at $100/page.</p>
+    </div>
+    <div class="service-card">
+        <h4>Character Design</h4>
+        <p>Unique and professional character designs for your series. Starting at $50 per character.</p>
+    </div>
+</div>
+
+</div>
+
+<footer>
+&copy; 2025 SkillBridge | Empowering African student freelancers
+</footer>
+
     </main>
   );
 }

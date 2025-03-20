@@ -5,160 +5,160 @@ import "./Jobs.css";
 function Jobs() {
   return (
     <main>
-      <header>
-        <div className="nav-container">
-          <div className="logo">SkillBridge</div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/jobs">Find Jobs</Link>
-              </li>
-              <li>
-                <Link to="/gig">Post a Gig</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/profile">
-                  <img
-                    src="/path/to/profile-icon.png"
-                    alt="Profile"
-                    className="nav-profile"
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    <nav className="navbar">
+        <div className="logo">SkillBridge</div>
+        <ul className="nav-links">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/jobs">Find Jobs</Link>
+          </li>
+          <li>
+            <Link to="/gig">Post a Gig</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/profile">
+              <img
+                src="/path/to/profile-icon.png"
+                alt="Profile"
+                style={{ width: "30px", height: "30px", borderRadius: "50%" }}
+              />
+            </Link>
+          </li>
+        </ul>
+      </nav>
 
-      <main>
-        <section class="hero-section">
-          <h1>Welcome to the SkillBridge!</h1>
-          <p>
-            Are you an African graduate student looking to expand your skills,
-            earn money, and build professional connections? You’re in the right
-            place! Our community connects talented graduate students with
-            freelancing opportunities while fostering mentorship, collaboration,
-            and growth.
-          </p>
+   
+      <section class="intro-section">
+            <h1>Find Freelance Jobs</h1>
+            <p>Browse freelance gigs tailored for African graduate students. Start your journey today!</p>
         </section>
 
-        <section class="content-section">
-          <h2>Why Join Our Community?</h2>
-          <ul>
-            <li>
-              Network with like-minded professionals and industry experts.
-            </li>
-            <li>
-              Access exclusive freelance opportunities that match your skills.
-            </li>
-            <li>
-              Participate in workshops, webinars, and mentorship programs.
-            </li>
-            <li>Showcase your talent and success stories.</li>
-          </ul>
+
+        <section class="filters">
+            <input type="text" placeholder="Search for jobs..." />
+            <select>
+                <option value="">All Categories</option>
+                <option value="design">Illustration & Design</option>
+                <option value="writing">Writing</option>
+                <option value="data">Data Analysis</option>
+                <option value="social-media">Social Media</option>
+            </select>
+            <select>
+                <option value="">Budget Range</option>
+                <option value="0-100">$0 - $100</option>
+                <option value="100-300">$100 - $300</option>
+                <option value="300-500">$300 - $500</option>
+                <option value="500+">$500+</option>
+            </select>
+            <button>Filter</button>
         </section>
 
-        <section class="content-section">
-          <h2>How to Get Involved</h2>
-          <ul>
-            <li>Sign up to join our growing community.</li>
-            <li>Engage with us on LinkedIn, Twitter, and Facebook.</li>
-            <li>Attend our events and webinars to enhance your skills.</li>
-            <li>Find collaborators for your freelance projects.</li>
-          </ul>
-        </section>
+  
+        <section class="jobs-grid">
+            
+            <div class="job-card">
+                <h3>Graphic Designer</h3>
+                <p>Design social media posts for a growing tech startup.</p>
+                <div class="job-meta">
+                    <span>Budget: $300</span>
+                    <span>Deadline: April 15, 2025</span>
+                </div>
+                <button>Apply Now</button>
+            </div>
 
-        <section class="content-section">
-          <h2>Community Guidelines</h2>
-          <ul>
-            <li>Be respectful and professional.</li>
-            <li>No spam or self-promotion (unless allowed).</li>
-            <li>Give constructive feedback.</li>
-            <li>Keep discussions relevant to freelancing and career growth.</li>
-          </ul>
-        </section>
 
-        <section class="content-section">
-          <h2>Featured Members & Success Stories</h2>
-          <ul>
-            <li>
-              <strong>[Member Name]</strong> – Earned $5,000 in first 3 months!
-            </li>
-            <li>
-              <strong>[Another Member]</strong> – Landed a full-time role
-              through freelancing!
-            </li>
-            <li>Want to be featured? Share your story with us!</li>
-          </ul>
-        </section>
+            <div class="job-card">
+                <h3>Content Writer</h3>
+                <p>Create blog articles for a fintech platform focused on startups.</p>
+                <div class="job-meta">
+                    <span>Budget: $200</span>
+                    <span>Deadline: April 5, 2025</span>
+                </div>
+                <button>Apply Now</button>
+            </div>
 
-        <section class="content-section">
-          <h2>Upcoming Events & Webinars</h2>
-          <ul>
-            <li>
-              Freelancing 101 – <strong>March 25, 2025</strong>
-            </li>
-            <li>
-              Winning Portfolio Workshop – <strong>April 10, 2025</strong>
-            </li>
-            <li>
-              Setting Competitive Rates – <strong>May 5, 2025</strong>
-            </li>
-            <li>
-              <em>Register early to secure your spot!</em>
-            </li>
-          </ul>
-        </section>
 
-        <section class="content-section">
-          <h2>Need Help?</h2>
-          <p>
-            For questions or support, contact us at{" "}
-            <a href="mailto:support@skillbridge.com">support@skillbridge.com</a>{" "}
-            or visit our FAQ page.
-          </p>
-          <p>
-            Let’s build a thriving freelance economy for African graduate
-            students!
-          </p>
-        </section>
-      </main>
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p>Analyze customer data for a logistics company and provide insights.</p>
+                <div class="job-meta">
+                    <span>Budget: $500</span>
+                    <span>Deadline: April 20, 2025</span>
+                </div>
+                <button>Apply Now</button>
+            </div>
 
-      <footer>
+
+            <div class="job-card">
+                <h3>Social Media Manager</h3>
+                <p>Manage and grow Instagram & Twitter accounts for a fashion brand.</p>
+                <div class="job-meta">
+                    <span>Budget: $400</span>
+                    <span>Deadline: April 12, 2025</span>
+                </div>
+                <button>Apply Now</button>
+            </div>
+       
+
+            <div class="job-card">
+                <h3>SEO Content Strategist</h3>
+                <p>Develop high-ranking blog content for a growing SaaS company. Must have experience in keyword research and content marketing.</p>
+                <div class="job-meta">
+                <span>Budget: $350</span>
+                <span>Deadline: April 10, 2025</span>
+                </div>
+                <button>Apply</button>
+            </div>
+
+
+            <div class="job-card">
+                <h3>Senior Mobile App Developer (React Native)</h3>
+                <p>Build a cross-platform e-commerce app with seamless checkout and AI-driven recommendations.</p>
+                <div class="job-meta">
+                <span>Budget: $2,500</span>
+                <span>Deadline: May 5, 2025</span>
+                </div>
+                <button>Apply</button>
+            </div>
+            
+
+            <div class="job-card">
+                <h3>Blockchain Smart Contract Developer</h3>
+                <p>Develop and audit secure smart contracts for an NFT marketplace. Solidity and Web3 expertise required.</p>
+                <div class="job-meta">
+                <span>Budget: $4,000</span>
+                <span>Deadline: June 1, 2025</span>
+                </div>
+                <button>Apply</button>
+            </div>
+            </section>
+
+    <footer>
         <div class="footer-container">
-          <div class="footer-column">
-            <h3>SkillBridge</h3>
-            <p>Bridging the gap for African student freelancers</p>
-          </div>
-          <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Find Jobs</a>
-              </li>
-              <li>
-                <a href="#">Learn</a>
-              </li>
-              <li>
-                <a href="#">Community</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Contact</h3>
-            <p>Email: info@skillbridge.africa</p>
-          </div>
+            <div class="footer-column">
+                <h3>SkillBridge</h3>
+                <p>Bridging the gap for African student freelancers</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Find Jobs</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: info@skillbridge.africa</p>
+            </div>
         </div>
-      </footer>
+    </footer>
     </main>
   );
 }

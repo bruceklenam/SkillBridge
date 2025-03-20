@@ -21,10 +21,14 @@ body {
   background: #8b0000;
   color: #fff;
 }
-header {
+.header {
   background: #8b0000;
   color: #fff;
-  padding: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+h1{
   text-align: center;
 }
 

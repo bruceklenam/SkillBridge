@@ -21,8 +21,18 @@ function Homepage() {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
         </ul>
+      </nav>
 
+      <section class="hero">
+        <h1>Bridging the gap for African Student Freelancers</h1>
+        <p>
+          Connect with opportunities, build your skills, and launch your
+          freelance career
+        </p>
         <div className="signuplogin">
           <button className="signup-btn" onClick={() => navigate("/signup")}>
             Sign Up
@@ -31,21 +41,7 @@ function Homepage() {
             Login
           </button>
         </div>
-
-        <div className="menu-toggle">&#9776;</div>
-      </nav>
-
-      <header class="hero">
-        <h1>Bridging the gap for African Student Freelancers</h1>
-        <p>
-          Connect with opportunities, build your skills, and launch your
-          freelance career
-        </p>
-        <div class="hero-buttons">
-          <button class="btn dark">Get Started</button>
-          <button class="btn light">Learn More</button>
-        </div>
-      </header>
+      </section>
 
       <section class="why-choose">
         <h2>Why Choose SkillBridge?</h2>
