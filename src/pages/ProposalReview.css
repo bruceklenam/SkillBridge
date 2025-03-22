@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #540000;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Container */
+.container {
+    flex: 1;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Proposal Card */
+.proposal-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.proposal-card h3 {
+    color: #540000;
+    margin-bottom: 0.5rem;
+}
+
+.proposal-card p {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.proposal-card a {
+    color: #540000;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.accept {
+    background-color: #540000;
+    color: #fff;
+}
+
+.reject {
+    background-color: #ccc;
+    color: #540000;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid #540000;
+}
+
+.footer div {
+    margin-bottom: 1rem;
+}
+
+.footer h4 {
+    color: #540000;
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #540000;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar, .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-group .btn {
+        width: 100%;
+    }
+}

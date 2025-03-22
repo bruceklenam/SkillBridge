@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Jobs.css";
+import ProposalForm from "./ProposalForm";
 
 function Jobs() {
   return (
@@ -112,7 +113,7 @@ function Jobs() {
                 <span>Budget: $350</span>
                 <span>Deadline: April 10, 2025</span>
                 </div>
-                <button>Apply</button>
+               <Link to={ProposalForm} ><button>Apply</button> </Link>
             </div>
 
 

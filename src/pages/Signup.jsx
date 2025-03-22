@@ -11,9 +11,7 @@ function Signup() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/jobs">Find Jobs</Link>
-          </li>
+
           <li>
             <Link to="/about">About</Link>
           </li>

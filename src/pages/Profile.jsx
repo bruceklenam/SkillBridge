@@ -32,9 +32,13 @@ function Profile() {
         </ul>
       </nav>
 
+    <div class="notification">
+              <Link to="/notification" className="notificationlink">
+                Notifications(3)
+              </Link>
+    </div>
+
       <div class="profile-container">
-
-
 <div class="profile-header">
     <img src="https://via.placeholder.com/120" alt="Profile Picture"/>
     <h2>Barima Owusu Basoah</h2>

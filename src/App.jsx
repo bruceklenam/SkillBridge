@@ -7,6 +7,12 @@ import About from "./pages/About";
 import Jobs from "./pages/Jobs";
 import Gig from "./pages/Gig";
 import Profile from "./pages/Profile";
+import Notification from "./pages/Notification";
+import EditProfile from "./pages/EditProfile";
+import ProposalForm from "./pages/ProposalForm";
+import ProposalReview from "./pages/ProposalReview";
+
+
 
 function App() {
   return (
@@ -19,6 +25,10 @@ function App() {
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/gig" element={<Gig />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/notification" element={<Notification/>} />
+        <Route path="/editprofile" element={<EditProfile/>}/>
+        <Route path="/proposalform" element={<ProposalForm/>}/>
+        <Route path="/proposalreview" element={<ProposalReview/>}/>
       </Routes>
     </Router>
   );
